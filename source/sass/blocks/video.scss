@@ -2,16 +2,19 @@
   padding-top: 120px;
   padding-bottom: 150px;
   background-image: linear-gradient(to bottom, $video-background 706px, $basic-white 248px);
-  min-width: 1440px;
+  // min-width: 1440px;
 }
 
 .video__wrapper {
   padding-left: 119px;
   padding-right: 119px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 73px;
+  }
 }
 
 .video__title {
-
   & h2 {
 
     color: $basic-white;
@@ -41,8 +44,14 @@
 
 .video__block {
   position: relative;
-  width: 929px;
+  // width: 929px;
   height: 522px;
+
+  @media (max-width: $tablet-width) {
+    background-image: url("/img/vide-background-tablet.png");
+    width: 503px;
+    height: 282px;
+  }
 }
 
 .video__button {

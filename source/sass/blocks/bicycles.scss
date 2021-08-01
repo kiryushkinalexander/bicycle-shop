@@ -1,7 +1,13 @@
 .bicycles {
   padding-top: 149px;
   padding-bottom: 147px;
+  background-color: $bicycles-background;
   // min-width: 1440px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
 }
 
 .bicycles__types {
@@ -18,7 +24,7 @@
 }
 
 .bicycles__wrapper {
-  background-color: $bicycles-background;
+
 }
 
 .bicycles__title {

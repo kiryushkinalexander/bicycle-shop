@@ -15,8 +15,8 @@
 
 <body class="page__body">
   <header class="page__header">
-    <div class="page-header">
-      <div class="page-header__wrapper wrapper">
+    <div class="page-header wrapper">
+      <div class="page-header__wrapper ">
         <button class="page-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -47,32 +47,40 @@
         height="825">
       <div class="promo__wrapper">
         <div class="promo__title">
-          <a href="#">
-            <img src="img/moon-logo.svg" alt="logo" width="68" height="21">
+          <div class="promo__title--link">
+            <a href="#">
+              <img src="img/moon-logo.svg" alt="logo" width="68" height="21">
 
-          </a>
-          <h2>Мы продаем велосипеды</h2>
-          <p>Наш магазин отбирает тоолько самые лучшие велосипеды для продажи</p>
+            </a>
+          </div>
+          <div class="promo__title--text">
+            <h2>Мы продаем велосипеды</h2>
+            <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+          </div>
+
         </div>
-        <form class="form" action="https://echo.htmlacademy.ru" method="get" autocomplete="off">
-          <fieldset>
-            <legend>Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
-            <p>
-              <label class="form__label form__label--name visually-hidden" for="name">Введите ваше имя</label>
-              <input class="form__input form__input--name" type="text" id="name" placeholder="Введите Ваше Имя">
-            </p>
-            <p>
-              <label class="form__label form__label--telephone visually-hidden vis" for="phone">Введите ваше имя</label>
-              <input class="form__input form__input--telephone" type="tel" id="phone"
-                placeholder="Введите Ваш номер телефона">
-            </p>
-            <button class="button form__button" type="submit">Подобрать велосипед мечты</button>
-          </fieldset>
-        </form>
+        <div class="promo__form">
+          <form class="form" action="https://echo.htmlacademy.ru" method="get" autocomplete="off">
+            <fieldset>
+              <legend>Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
+              <p>
+                <label class="form__label form__label--name visually-hidden" for="name">Введите ваше имя</label>
+                <input class="form__input form__input--name" type="text" id="name" placeholder="Введите Ваше Имя">
+              </p>
+              <p>
+                <label class="form__label form__label--telephone visually-hidden vis" for="phone">Введите ваше имя</label>
+                <input class="form__input form__input--telephone" type="tel" id="phone"
+                  placeholder="Введите Ваш номер телефона">
+              </p>
+              <button class="button form__button" type="submit">Подобрать велосипед мечты</button>
+            </fieldset>
+          </form>
+        </div>
+
       </div>
     </section>
-    <section class="facts">
-      <div class="facts__wrapper wrapper">
+    <section class="facts  wrapper">
+      <div class="facts__wrapper">
         <h2 class="facts__title">Несколько фактов о нас</h2>
         <ul class="facts__list">
           <li>
@@ -90,7 +98,8 @@
         </ul>
       </div>
     </section>
-    <section class="bicycles bicycles__wrapper">
+    <section class="bicycles
+    ">
       <div class="wrapper">
 
         <h2 class="bicycles__title">Виды велосипедов</h2>

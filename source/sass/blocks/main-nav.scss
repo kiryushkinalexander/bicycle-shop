@@ -1,3 +1,8 @@
+.main-nav {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
 .main-nav__list {
   @include list-reset;
   display: flex;
@@ -29,9 +34,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    display: grid;
-    margin-left: auto;
-
+    display: none;
 
     & li {
       padding: 0;

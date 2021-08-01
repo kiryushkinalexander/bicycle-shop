@@ -1,11 +1,19 @@
 .facts {
   padding-top: 150px;
   padding-bottom: 148px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 70px;
+  }
 }
 
 .facts__wrapper {
-  padding-left: 137px;
-  padding-right: 137px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 85px;
+    padding-right: 85px;
+  }
 }
 
 .facts__title {
@@ -18,10 +26,19 @@
   text-align: center;
   margin: 0;
   margin-bottom: 50px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 41px;
+  }
 }
 
 .facts__list {
   @include list-reset;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -66,5 +83,17 @@
 
   & p {
     margin: 0;
+  }
+
+
+  @media (max-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 30px;
+
+    & li {
+      padding: 0;
+      padding-top: 40px;
+    }
   }
 }

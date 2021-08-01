@@ -2,10 +2,15 @@
   width: 100%;
   padding-top: 21px;
   background-color: $video-background;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 0;
+    background-color: transparent;
+  }
 }
 
 .page-header__wrapper {
-  padding: 0 283px 0 283px;
+  padding: 0 165px 0 165px;
 }
 
 .page-header__toggle {
