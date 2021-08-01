@@ -13,12 +13,16 @@
 .bicycles__types {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content:  center;
+  align-items: flex-start;
+  gap: 50px;
   padding-left: 20px;
   padding-right: 20px;
 
   @media (max-width: $tablet-width) {
-    display: grid;
+    gap: 30px 50px;
+    padding-left: 78px;
+    padding-right: 78px;
   }
 }
 
@@ -38,8 +42,8 @@
 
   &--city {
     margin-top: 10px;
-    z-index: 4;
-    background-image: url("../img/city-bike-desktop@1x.png");
+    z-index: 1;
+    // background-image: url("../img/city-bike-desktop@1x.png");
     height: 503px;
     width: 342px;
 
@@ -60,15 +64,27 @@
     }
 
     @media (max-width: $tablet-width) {
-      background-image: url("../img/city-bike-tablet@1x.png");
-      height: 300px;
-      width: 270px;
+
+      margin-top: 0;
+
+      & img {
+        background-image: url("../img/city-bike-tablet@1x.png");
+        height: 300px;
+        width: 270px;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+
+      & h3 {
+        padding-top: 0;
+      }
+
     }
   }
 
   &--mountain {
     margin-top: 39px;
-    background-image: url("../img/mountain-bike-desktop@1x.png");
+    // background-image: url("../img/mountain-bike-desktop@1x.png");
     height: 566px;
     width: 342px;
 
@@ -97,14 +113,25 @@
     }
 
     @media (max-width: $tablet-width) {
-      background-image: url("../img/mountain-bike-tablet@1x.png");
-      height: 300px;
-      width: 270px;
+      margin-top: 0;
+
+      & img {
+        background-image: url("../img/mountain-bike-tablet@1x.png");
+        height: 300px;
+        width: 270px;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+
+
+    & h3 {
+      padding-top: 0;
+    }
     }
   }
 
   &--kids {
-    background-image: url("../img/kids-bike-desktop@1x.png");
+    // background-image: url("../img/kids-bike-desktop@1x.png");
     height: 512px;
     width: 342px;
 
@@ -124,9 +151,21 @@
     }
 
     @media (max-width: $tablet-width) {
-      background-image: url("../img/kids-bike-tablet@1x.png");
-      height: 300px;
-      width: 270px;
+      margin-top: 0;
+
+      & img {
+        background-image: url("../img/kids-bike-tablet@1x.png");
+        height: 300px;
+        width: 270px;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+
+
+    & h3 {
+      padding-top: 0;
+    }
+
     }
   }
 

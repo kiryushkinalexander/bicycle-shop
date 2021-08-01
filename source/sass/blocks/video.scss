@@ -3,6 +3,12 @@
   padding-bottom: 150px;
   background-image: linear-gradient(to bottom, $video-background 706px, $basic-white 248px);
   // min-width: 1440px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-image: linear-gradient(to bottom, $video-background 413px, $basic-white 155px);
+  }
 }
 
 .video__wrapper {
@@ -11,6 +17,7 @@
 
   @media (max-width: $tablet-width) {
     padding-left: 73px;
+    padding-right: 73px;
   }
 }
 
@@ -25,6 +32,14 @@
     line-height: 30px;
     margin: 0;
     margin-bottom: 20px;
+
+
+    @media (max-width: $tablet-width) {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
 
   & p {
@@ -39,6 +54,11 @@
     margin-bottom: 56px;
     padding-left: 294px;
     padding-right: 294px;
+
+    @media (max-width: $tablet-width) {
+      padding: 0;
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -51,6 +71,7 @@
     background-image: url("/img/vide-background-tablet.png");
     width: 503px;
     height: 282px;
+    margin: 0 auto;
   }
 }
 
@@ -68,4 +89,13 @@
   background-size: 13px 18px;
   top: -290px;
   left: 47%;
+
+  @media (max-width: $tablet-width) {
+    width: 90px;
+    height: 90px;
+    background-size: 18px 25px;
+    background-position: left 38px center;
+    top: -190px;
+    left: 43%;
+  }
 }
