@@ -1,0 +1,62 @@
+.form {
+  margin: 0;
+  width: 327px;
+}
+
+.form fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+
+  & p {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.form legend {
+  font-family: $font-default;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  color: $basic-white;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form__input {
+  font-family: $font-default;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 14px 68px 10px 29px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+
+  &::placeholder {
+    font-family: $font-default;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: $input-color;
+    opacity: 0.5;
+  }
+}
+
+.form__button {
+  font-family: $font-default;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  width: 100%;
+  border: none;
+  background-color: $decoration-color;
+  border-radius: 6px;
+  padding: 15px 48px;
+}

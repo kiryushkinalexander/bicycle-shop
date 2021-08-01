@@ -1,0 +1,47 @@
+.social {
+  padding-top: 39px;
+  padding-bottom: 98px;
+  position: relative;
+}
+
+.social__list {
+  @include list-reset;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: $font-default;
+}
+
+.social__mail {
+  margin: 0;
+  padding: 0;
+  padding-left: 200px;
+
+  & a {
+    color: $social-color;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    &::before {
+      position: absolute;
+      content: url("");
+    }
+  }
+}
+
+.social__phone {
+  margin: 0;
+  padding: 0;
+  padding-right: 200px;
+
+  & a {
+    color: $social-color;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+  }
+}

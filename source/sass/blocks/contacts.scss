@@ -1,0 +1,28 @@
+.contacts {
+  & h2 {
+    font-family: $font-default;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    color: $contacts-color;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  & p {
+    margin: 0;
+    padding: 0;
+    font-family: $font-default;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 31px;
+    text-align: center;
+    color: $contacts-color-bottom;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-bottom: 42px;
+  }
+}

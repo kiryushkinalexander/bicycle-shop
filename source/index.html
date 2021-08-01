@@ -5,18 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/open-sans-400.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/open-sans-300.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/open-sans-600.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/open-sans-700.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Велосипеды</title>
 </head>
 
 <body class="page__body">
   <header class="page__header">
-    <div class="page-header wrapper">
-      <button class="page-header__toggle" type="button">
-        <span class="visuaaly-hidden">Открыть меню</span>
-      </button>
-      <nav class="page-header__nav main-nav">
-        <ul class="main-nav__list">
-          <ul>
+    <div class="page-header">
+      <div class="page-header__wrapper wrapper">
+        <button class="page-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <nav class="page-header__nav main-nav">
+          <ul class="main-nav__list">
             <li>
               <a href="#">О нас</a>
             </li>
@@ -30,16 +35,22 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
-        </ul>
-      </nav>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main class="page__main">
-    <section class="promo">
-      <div class="promo__wrapper wrapper">
-        <h1 class="visually-hidden">Магазин велосипедов</h1>
+    <section class="promo wrapper">
+      <h1 class="visually-hidden">Магазин велосипедов</h1>
+      <img class="promo__image" src="img/main-background-desktop@1x.png" alt="фото велосипеда" width="1440"
+        height="825">
+      <div class="promo__wrapper">
         <div class="promo__title">
+          <a href="#">
+            <img src="img/moon-logo.svg" alt="logo" width="68" height="21">
+
+          </a>
           <h2>Мы продаем велосипеды</h2>
           <p>Наш магазин отбирает тоолько самые лучшие велосипеды для продажи</p>
         </div>
@@ -47,11 +58,11 @@
           <fieldset>
             <legend>Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
             <p>
-              <label class="form__label form__label--name" for="name">Введите ваше имя</label>
+              <label class="form__label form__label--name visually-hidden" for="name">Введите ваше имя</label>
               <input class="form__input form__input--name" type="text" id="name" placeholder="Введите Ваше Имя">
             </p>
             <p>
-              <label class="form__label form__label--telephone" for="phone">Введите ваше имя</label>
+              <label class="form__label form__label--telephone visually-hidden vis" for="phone">Введите ваше имя</label>
               <input class="form__input form__input--telephone" type="tel" id="phone"
                 placeholder="Введите Ваш номер телефона">
             </p>
@@ -79,62 +90,72 @@
         </ul>
       </div>
     </section>
-    <section class="bicycles">
-      <div class="bicycles__wrapper wrapper">
-        <div class="bicycles__item bicycles__item--city">
-          <img src="img/city-bike-desktop@1x.png" alt="картинка дорожного велосипеда" height="503" width="342">
-          <h3>Дорожный велосипед</h3>
-        </div>
-        <div class="bicycles__item bicycles__item--mountain">
-          <img src="img/mountain-bike-desktop@1x.png" alt="картинка горного велосипеда" height="503" width="342">
-          <h3>Горный велосипед</h3>
-        </div>
-        <div class="bicycles__item bicycles__item--kids">
-          <img src="img/kids-bike-desktop@1x.png" alt="картинка детского велосипеда" height="503" width="342">
-          <h3>Детский велосипед</h3>
+    <section class="bicycles bicycles__wrapper">
+      <div class="wrapper">
+
+        <h2 class="bicycles__title">Виды велосипедов</h2>
+
+        <div class="bicycles__types">
+          <div class="bicycles__item bicycles__item--city">
+            <img src="img/city-bike-desktop@1x.png" alt="картинка дорожного велосипеда" height="503" width="342">
+            <h3>Дорожный велосипед</h3>
+          </div>
+          <div class="bicycles__item bicycles__item--mountain">
+            <img src="img/mountain-bike-desktop@1x.png" alt="картинка горного велосипеда" height="503" width="342">
+            <h3>Горный велосипед</h3>
+          </div>
+          <div class="bicycles__item bicycles__item--kids">
+            <img src="img/kids-bike-desktop@1x.png" alt="картинка детского велосипеда" height="503" width="342">
+            <h3>Детский велосипед</h3>
+          </div>
         </div>
       </div>
     </section>
     <section class="video">
-      <div class="video__wrapper wrapper">
-        <div class="video__title">
-          <h2>Видео про велосипеды</h2>
-          <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
-        </div>
-        <div class="video__block">
-          <img src="img/video-background-desktop.png" alt="картинка видео">
-          <button class="button video__button">Воспроизвести видео</button>
+      <div class="wrapper">
+        <div class="video__wrapper">
+          <div class="video__title">
+            <h2>Видео про велосипеды</h2>
+            <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
+          </div>
+          <div class="video__block">
+            <img src="img/video-background-desktop.png" alt="картинка видео">
+            <button class="button video__button">Воспроизвести видео</button>
+          </div>
         </div>
       </div>
     </section>
   </main>
-  <footer class="page__footer">
-    <div class="footer__wrapper wrapper">
-      <div class="contacts">
-        <h2>Как нас найти?</h2>
-        <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-        <div class="contacts__map">
-
+  <footer class="page__footer footer">
+    <div class="wrapper">
+      <div class="footer__wrapper">
+        <div class="contacts">
+          <h2>Как нас найти?</h2>
+          <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+          <div class="contacts__map">
+            <img src="img/map.png" width="957" height="530" alt="">
+          </div>
+        </div>
+        <div class="social">
+          <ul class="social__list">
+            <li>
+              <span class="visually-hidden">Наш телефон</span>
+              <p class="social__mail"><a href="mailto:puteshestviemechta@gmail.ru">
+                  puteshestviemechta@gmail.ru
+                </a>
+            </li>
+            <li>
+              <span class="visually-hidden">Наша почта</span>
+              <p class="social__phone"><a href="tel:+749978468446">
+                  +7(499)-784-684-46
+                </a>
+              </p>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="social">
-        <ul class="social__list">
-          <li>
-            <span class="visually-hidden">Наша почта</span>
-            <p class="social__phone"><a href="tel:+749978468446">
-              +7(499)-784-684-46
-            </a>
-          </p>
-          </li>
-          <li>
-            <span class="visually-hidden">Наш телефон</span>
-            <p class="social__mail"><a href="mailto:puteshestviemechta@gmail.ru">
-              puteshestviemechta@gmail.ru
-            </a>
-          </li>
-        </ul>
-      </div>
     </div>
+
 
   </footer>
 </body>
