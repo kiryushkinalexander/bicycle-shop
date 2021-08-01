@@ -19,12 +19,7 @@
 
   @media (max-width: $tablet-width) {
     display: grid;
-    grid-row: 1fr;
   }
-}
-
-.bicycles__wrapper {
-
 }
 
 .bicycles__title {
@@ -39,13 +34,14 @@
 }
 
 .bicycles__item {
-
   position: relative;
-
 
   &--city {
     margin-top: 10px;
-    z-index: 1;
+    z-index: 4;
+    background-image: url("../img/city-bike-desktop@1x.png");
+    height: 503px;
+    width: 342px;
 
     &::before {
       position: absolute;
@@ -58,10 +54,23 @@
       top: 25%;
       z-index: -1;
     }
+
+    & h3 {
+      padding-top: 523px;
+    }
+
+    @media (max-width: $tablet-width) {
+      background-image: url("../img/city-bike-tablet@1x.png");
+      height: 300px;
+      width: 270px;
+    }
   }
 
   &--mountain {
     margin-top: 39px;
+    background-image: url("../img/mountain-bike-desktop@1x.png");
+    height: 566px;
+    width: 342px;
 
     &::after {
       position: absolute;
@@ -82,9 +91,23 @@
       bottom: 35px;
       right: -20px;
     }
+
+    & h3 {
+      padding-top: 588px;
+    }
+
+    @media (max-width: $tablet-width) {
+      background-image: url("../img/mountain-bike-tablet@1x.png");
+      height: 300px;
+      width: 270px;
+    }
   }
 
   &--kids {
+    background-image: url("../img/kids-bike-desktop@1x.png");
+    height: 512px;
+    width: 342px;
+
     &::before {
       position: absolute;
       content: "";
@@ -95,11 +118,20 @@
       top: -45px;
       right: -45px;
     }
+
+    & h3 {
+      padding-top: 533px;
+    }
+
+    @media (max-width: $tablet-width) {
+      background-image: url("../img/kids-bike-tablet@1x.png");
+      height: 300px;
+      width: 270px;
+    }
   }
 
   & h3 {
     margin: 0;
-    margin-top: 20px;
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
