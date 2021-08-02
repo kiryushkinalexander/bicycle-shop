@@ -1,12 +1,7 @@
 .wrapper {
-  margin: 0 auto;
-  padding: 0 137px;
-
-  @media (max-width: $tablet-width) {
-    padding: 0 21px;
-  }
-
   @media (max-width: $mobile-width) {
-    padding: 0 16px;
+    max-width: 319px;
+    padding: 0 13px;
+    margin: 0 auto;
   }
 }

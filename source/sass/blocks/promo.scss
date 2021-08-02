@@ -1,52 +1,44 @@
 .promo {
   position: relative;
-  // min-width: 1440px;
-  background-color: $video-background;
   z-index: -1;
   padding-top: 260px;
   padding-bottom: 240px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 25px;
+    padding-top: 89px;
     padding-bottom: 70px;
-    background-color: $basic-white;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 75px;
+    padding-bottom: 71px;
   }
 }
 
 .promo__wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 201px;
   max-width: 880px;
   margin: 0 auto;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
     padding: 0;
+    gap: 150px;
+    max-width: 525px;
   }
-}
 
-.promo__image {
-  position: absolute;
-  // min-width: 1440px;
-  z-index: -1;
-  content: "";
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: $basic-black;
-  right: 50%;
-  top: -8%;
-  transform: translateX(50%);
-  height: 825px;
-
-  @media (max-width: $tablet-width) {
-    background-image: url("/img/main-background-tablet@1x.png");
-    height: 340px;
-    top: -2%;
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    padding: 0;
+    gap: 140px;
+    max-width: 288px;
   }
 }
 
 .promo__title {
+
   & h2 {
     margin: 0;
     margin-top: 28px;
@@ -75,13 +67,6 @@
   }
 
   @media (max-width: $tablet-width) {
-    // width: auto;
-    margin-bottom: 150px;
-
-    & img {
-      margin-bottom: 95px;
-      padding-left: 0;
-    }
 
     & h2 {
       margin-top: 0;
@@ -111,10 +96,49 @@
       }
     }
   }
+
+  @media (max-width: $mobile-width) {
+
+    & h2 {
+      margin-top: 0;
+      padding-left: 96px;
+      padding-right: 96px;
+    }
+
+    &--text {
+
+        max-width: 288px;
+        margin: 0 auto;
+
+
+      & h2 {
+        text-align: center;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 42px;
+        margin-bottom: 20px;
+        padding: 0;
+      }
+
+      & p {
+        text-align: center;
+        width: 288px;
+        margin: 0 auto;
+      }
+    }
+  }
 }
 
 .promo__form {
   @media (max-width: $tablet-width) {
 
+  }
+}
+
+.promo__link {
+
+  @media (max-width: $tablet-width) {
+    display: none;
   }
 }

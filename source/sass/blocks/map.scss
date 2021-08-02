@@ -1,0 +1,16 @@
+.map {
+  width: 957px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    background-image: url("/img/map-tablet.png");
+    width: 698px;
+    height: 545px;
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: url("/img/map-mobile.png");
+    width: 320px;
+    height: 250px;
+  }
+}

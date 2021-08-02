@@ -1,9 +1,9 @@
 .form {
   margin: 0;
-  width: 327px;
+  max-width: 327px;
 
   @media (max-width: $tablet-width) {
-    width: 324px;
+    max-width: 324px;
     margin: 0 auto;
   }
 }
@@ -88,4 +88,8 @@
   background-color: $decoration-color;
   border-radius: 6px;
   padding: 15px 48px;
+
+  @media (max-width: $mobile-width) {
+    padding: 15px 31px;
+  }
 }

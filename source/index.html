@@ -15,72 +15,71 @@
 
 <body class="page__body">
   <header class="page__header">
-    <div class="page-header wrapper">
-      <div class="page-header__wrapper ">
-        <button class="page-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <nav class="page-header__nav main-nav">
-          <ul class="main-nav__list">
-            <li>
-              <a href="#">О нас</a>
-            </li>
-            <li>
-              <a href="#">Виды велосипедов</a>
-            </li>
-            <li>
-              <a href="#">Видео про велосипеды</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <div class="page-header">
+      <img class="page-header__image" src="img/main-background-desktop@1x.png" alt="фото велосипеда" width="1440"
+        height="825">
+      <nav class="page-header__nav main-nav">
+        <a class="page-header__link" href="#">
+          <img src="img/moon-logo.svg" alt="logo" width="68" height="21">
+        </a>
+        <ul class="main-nav__list">
+          <li>
+            <a href="#">О нас</a>
+          </li>
+          <li>
+            <a href="#">Виды велосипедов</a>
+          </li>
+          <li>
+            <a href="#">Видео про велосипеды</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="promo">
+        <h1 class="visually-hidden">Магазин велосипедов</h1>
+
+        <div class="promo__wrapper wrapper">
+          <div class="promo__title">
+            <a class="promo__link">
+              <img src="img/moon-logo.svg" alt="logo" width="68" height="21">
+              <span class="visually-hidden">Открыть меню</span>
+            </a>
+            <div class="promo__title--text">
+              <h2>Мы продаем велосипеды</h2>
+              <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+            </div>
+
+          </div>
+          <div class="promo__form">
+            <form class="form" action="https://echo.htmlacademy.ru" method="get" autocomplete="off">
+              <fieldset>
+                <legend>Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
+                <p>
+                  <label class="form__label form__label--name visually-hidden" for="name">Введите ваше имя</label>
+                  <input class="form__input form__input--name" type="text" id="name" placeholder="Введите Ваше Имя">
+                </p>
+                <p>
+                  <label class="form__label form__label--telephone visually-hidden vis" for="phone">Введите ваше
+                    имя</label>
+                  <input class="form__input form__input--telephone" type="tel" id="phone"
+                    placeholder="Введите Ваш номер телефона">
+                </p>
+                <button class="button form__button" type="submit">Подобрать велосипед мечты</button>
+              </fieldset>
+            </form>
+          </div>
+
+        </div>
+      </section>
     </div>
   </header>
 
   <main class="page__main">
-    <section class="promo wrapper">
-      <h1 class="visually-hidden">Магазин велосипедов</h1>
-      <img class="promo__image" src="img/main-background-desktop@1x.png" alt="фото велосипеда" width="1440"
-        height="825">
-      <div class="promo__wrapper">
-        <div class="promo__title">
-          <div class="promo__title--link">
-            <a href="#">
-              <img src="img/moon-logo.svg" alt="logo" width="68" height="21">
 
-            </a>
-          </div>
-          <div class="promo__title--text">
-            <h2>Мы продаем велосипеды</h2>
-            <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-          </div>
-
-        </div>
-        <div class="promo__form">
-          <form class="form" action="https://echo.htmlacademy.ru" method="get" autocomplete="off">
-            <fieldset>
-              <legend>Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
-              <p>
-                <label class="form__label form__label--name visually-hidden" for="name">Введите ваше имя</label>
-                <input class="form__input form__input--name" type="text" id="name" placeholder="Введите Ваше Имя">
-              </p>
-              <p>
-                <label class="form__label form__label--telephone visually-hidden vis" for="phone">Введите ваше имя</label>
-                <input class="form__input form__input--telephone" type="tel" id="phone"
-                  placeholder="Введите Ваш номер телефона">
-              </p>
-              <button class="button form__button" type="submit">Подобрать велосипед мечты</button>
-            </fieldset>
-          </form>
-        </div>
-
-      </div>
-    </section>
-    <section class="facts  wrapper">
-      <div class="facts__wrapper">
+    <section class="facts">
+      <div class="facts__wrapper wrapper">
         <h2 class="facts__title">Несколько фактов о нас</h2>
         <ul class="facts__list">
           <li>
@@ -98,12 +97,9 @@
         </ul>
       </div>
     </section>
-    <section class="bicycles
-    ">
+    <section class="bicycles">
       <div class="wrapper">
-
         <h2 class="bicycles__title">Виды велосипедов</h2>
-
         <div class="bicycles__types">
           <div class="bicycles__item bicycles__item--city">
             <img src="img/city-bike-desktop@1x.png" alt="картинка дорожного велосипеда" height="503" width="342">
@@ -119,49 +115,46 @@
           </div>
         </div>
       </div>
+
     </section>
     <section class="video">
       <div class="wrapper">
-        <div class="video__wrapper">
-          <div class="video__title">
-            <h2>Видео про велосипеды</h2>
-            <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
-          </div>
-          <div class="video__block">
-            <img src="img/video-background-desktop.png" alt="картинка видео">
-            <button class="button video__button">Воспроизвести видео</button>
-          </div>
+        <div class="video__title">
+          <h2>Видео про велосипеды</h2>
+          <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
+        </div>
+        <div class="video__block">
+          <img src="img/video-background-desktop.png" alt="картинка видео">
+          <button class="button video__button">Воспроизвести видео</button>
         </div>
       </div>
     </section>
   </main>
   <footer class="page__footer footer">
-    <div class="wrapper">
-      <div class="footer__wrapper">
-        <div class="contacts">
-          <h2>Как нас найти?</h2>
-          <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-          <div class="contacts__map">
-            <img src="img/map.png" width="957" height="530" alt="">
-          </div>
-        </div>
-        <div class="social">
-          <ul class="social__list">
-            <li>
-              <span class="visually-hidden">Наш телефон</span>
-              <p class="social__mail"><a href="mailto:puteshestviemechta@gmail.ru">
-                  puteshestviemechta@gmail.ru
-                </a>
-            </li>
-            <li>
-              <span class="visually-hidden">Наша почта</span>
-              <p class="social__phone"><a href="tel:+749978468446">
-                  +7(499)-784-684-46
-                </a>
-              </p>
-            </li>
-          </ul>
-        </div>
+    <div class="footer__wrapper">
+      <div class="contacts">
+        <h2>Как нас найти?</h2>
+        <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+      </div>
+      <div class="map">
+        <img src="img/map.png" width="957" height="530" alt="">
+      </div>
+      <div class="social">
+        <ul class="social__list">
+          <li>
+            <span class="visually-hidden">Наш телефон</span>
+            <p class="social__mail"><a href="mailto:puteshestviemechta@gmail.ru">
+                puteshestviemechta@gmail.ru
+              </a>
+          </li>
+          <li>
+            <span class="visually-hidden">Наша почта</span>
+            <p class="social__phone"><a href="tel:+749978468446">
+                +7(499)-784-684-46
+              </a>
+            </p>
+          </li>
+        </ul>
       </div>
     </div>
 

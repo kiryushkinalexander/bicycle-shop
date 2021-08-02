@@ -2,21 +2,32 @@
   padding-top: 39px;
   padding-bottom: 98px;
   position: relative;
+  margin: o auto;
+
+  @media (max-width: $tablet-width) {
+    max-width: 698px;
+  }
 }
 
 .social__list {
   @include list-reset;
 
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
   font-family: $font-default;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .social__mail {
   margin: 0;
   padding: 0;
-  padding-left: 200px;
+  text-align: right;
 
   & a {
     color: $social-color;
@@ -32,14 +43,13 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding-left: 125px;
   }
 }
 
 .social__phone {
   margin: 0;
   padding: 0;
-  padding-right: 200px;
+  text-align: left;
 
   & a {
     color: $social-color;
@@ -50,6 +60,5 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding-right: 84px;
   }
 }

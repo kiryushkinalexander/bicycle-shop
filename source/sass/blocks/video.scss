@@ -2,7 +2,6 @@
   padding-top: 120px;
   padding-bottom: 150px;
   background-image: linear-gradient(to bottom, $video-background 706px, $basic-white 248px);
-  // min-width: 1440px;
 
   @media (max-width: $tablet-width) {
     padding-top: 70px;
@@ -11,17 +10,10 @@
   }
 }
 
-.video__wrapper {
-  padding-left: 119px;
-  padding-right: 119px;
-
-  @media (max-width: $tablet-width) {
-    padding-left: 73px;
-    padding-right: 73px;
-  }
-}
-
 .video__title {
+  max-width: 370px;
+  margin: 0 auto;
+
   & h2 {
 
     color: $basic-white;
@@ -52,8 +44,6 @@
     text-align: center;
     margin: 0;
     margin-bottom: 56px;
-    padding-left: 294px;
-    padding-right: 294px;
 
     @media (max-width: $tablet-width) {
       padding: 0;
@@ -64,19 +54,27 @@
 
 .video__block {
   position: relative;
-  // width: 929px;
+  width: 929px;
   height: 522px;
+  margin: 0 auto;
 
   @media (max-width: $tablet-width) {
+
     background-image: url("/img/vide-background-tablet.png");
     width: 503px;
     height: 282px;
-    margin: 0 auto;
+  }
+
+  @media (max-width: $mobile-width) {
+
+    background-image: url("/img/video-background-mobile.png");
+    width: 288px;
+    height: 162px;
   }
 }
 
 .video__button {
-  position: relative;
+  position: absolute;
   border-radius: 50%;
   font-size: 0;
   width: 65px;
@@ -87,7 +85,7 @@
   cursor: pointer;
   background-position: left 28px center;
   background-size: 13px 18px;
-  top: -290px;
+  top: 155px;
   left: 47%;
 
   @media (max-width: $tablet-width) {
@@ -95,7 +93,16 @@
     height: 90px;
     background-size: 18px 25px;
     background-position: left 38px center;
-    top: -190px;
+    top: 100px;
+    left: 43%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 65px;
+    height: 65px;
+    background-size: 13px 18px;
+    background-position: left 27px center;
+    top: 52px;
     left: 43%;
   }
 }
