@@ -2,7 +2,6 @@
   max-width: 555px;
   margin: 0 auto;
 
-
   @media (max-width: $tablet-width) {
   max-width: 630px;
   }
@@ -46,13 +45,11 @@
     color: $contacts-color-bottom;
     margin-bottom: 42px;
 
-
     @media (max-width: $tablet-width) {
       padding: 0;
       margin-bottom: 20px;
     }
   }
-
 
   @media (max-width: $mobile-width) {
     max-width: 258px;

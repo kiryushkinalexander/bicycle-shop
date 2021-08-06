@@ -25,7 +25,6 @@
   }
 
   & h2 {
-
     color: $basic-white;
     text-align: center;
     font-style: normal;
@@ -73,14 +72,12 @@
   margin: 0 auto;
 
   @media (max-width: $tablet-width) {
-
     background-image: url("/img/vide-background-tablet.png");
     width: 503px;
     height: 282px;
   }
 
   @media (max-width: $mobile-width) {
-
     background-image: url("/img/video-background-mobile.png");
     width: 288px;
     height: 162px;

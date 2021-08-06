@@ -25,10 +25,6 @@
   gap: 28px;
   font-family: $font-default;
 
-  @media (max-width: $tablet-width) {
-
-  }
-
   @media (max-width: $mobile-width) {
     display: flex;
     flex-direction: column;
@@ -49,9 +45,6 @@
     line-height: 22px;
     padding-left: 13px;
   }
-
-  @media (max-width: $tablet-width) {
-  }
 }
 
 .social__phone {
@@ -70,8 +63,5 @@
 
   & img {
     margin-left: 62px;
-  }
-
-  @media (max-width: $tablet-width) {
   }
 }
