@@ -1,10 +1,14 @@
 .page-header {
-  width: 100%;
   padding-top: 21px;
   position: relative;
 
   @media (max-width: $tablet-width) {
     padding-top: 25px;
+    padding-bottom: 67px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 69px;
   }
 
   &--nojs {
@@ -18,26 +22,43 @@
   }
 
   &--opened {
-    .page-header__nav {
-      display: flex;
-      position: fixed;
-      justify-content: flex-start;
-      width: 100%;
-      height: 100vh;
-      background-color: $basic-white;
-      z-index: 2;
-      overflow-y: scroll;
-      top: 0;
+
+    @media (max-width: $tablet-width) {
+      .page-header__nav {
+        display: flex;
+        position: fixed;
+        justify-content: flex-end;
+        width: 320px;
+        height: 340px;
+        background-color: $basic-white;
+        z-index: 2;
+        top: 0;
+      }
+
+      .page-header__toggle {
+        background-image: url("../img/close-menu.svg");
+        width: 50px;
+        height: 50px;
+        background-size: 22px;
+        top: 0;
+        background-color: $basic-white;
+      }
     }
 
-    .page-header__toggle {
-      background-image: url("../img/close-menu.svg");
-      width: 50px;
-      height: 50px;
-      background-size: 22px;
-      top: 0;
-      background-color: $basic-white;
+    @media (max-width: $mobile-width) {
+      .page-header__nav {
+        display: flex;
+        position: fixed;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100vh;
+        background-color: $basic-white;
+        z-index: 2;
+        overflow-y: scroll;
+        top: 0;
+      }
     }
+
   }
 }
 
@@ -90,13 +111,35 @@
 
   @media (max-width: $tablet-width) {
     background-image: url("/img/main-background-tablet@1x.png");
-    height: 340px;
+    height: 356px;
     top: -2%;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     background-image: url("/img/main-background-mobile@1x.png");
-    height: 390px;
+    height: 406px;
     top: -2%;
   }
+}
+
+.page-header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 201px;
+    max-width: 880px;
+    margin: 0 auto;
+
+    @media (max-width: $tablet-width) {
+      flex-direction: column;
+      padding: 0;
+      gap: 78px;
+      max-width: 525px;
+    }
+
+    @media (max-width: $mobile-width) {
+      flex-direction: column;
+      padding: 0;
+      gap: 70px;
+      max-width: 288px;
+    }
 }

@@ -1,11 +1,15 @@
 .bicycles {
-  padding-top: 149px;
-  padding-bottom: 147px;
+  padding-top: 153px;
+  padding-bottom: 201px;
   background-color: $bicycles-background;
 
   @media (max-width: $tablet-width) {
     padding-top: 50px;
-    padding-bottom: 140px;
+    padding-bottom: 125px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 111px;
   }
 }
 
@@ -63,8 +67,8 @@
       height: 180px;
       border-radius: 50%;
       border: 27px solid $decoration-color;
-      left: -72px;
-      top: 25%;
+      left: -63px;
+      top: 31%;
       z-index: -1;
     }
 
@@ -123,7 +127,7 @@
       width: 47px;
       height: 47px;
       border: 8px solid $decoration-color;
-      bottom: 35px;
+      bottom: -22px;
       right: -20px;
     }
 
@@ -165,8 +169,8 @@
       height: 95px;
       border: 17px solid $decoration-color;
       border-radius: 50%;
-      top: -45px;
-      right: -45px;
+      top: -31px;
+      right: -36px;
     }
 
     & h3 {

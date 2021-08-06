@@ -1,10 +1,12 @@
 .social {
-  padding-top: 39px;
+  padding-top: 26px;
   padding-bottom: 98px;
   position: relative;
-  margin: o auto;
+  margin: 0 auto;
 
   @media (max-width: $tablet-width) {
+    padding-bottom: 55px;
+    padding-top: 14px;
     max-width: 698px;
   }
 
@@ -20,15 +22,16 @@
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr;
-  gap: 90px;
+  gap: 28px;
   font-family: $font-default;
 
   @media (max-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
+
   }
 
   @media (max-width: $mobile-width) {
+    display: flex;
+    flex-direction: column;
     gap: 22px;
   }
 }
@@ -44,6 +47,7 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
+    padding-left: 13px;
   }
 
   @media (max-width: $tablet-width) {
@@ -61,6 +65,11 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 32px;
+    padding-left: 17px;
+  }
+
+  & img {
+    margin-left: 62px;
   }
 
   @media (max-width: $tablet-width) {

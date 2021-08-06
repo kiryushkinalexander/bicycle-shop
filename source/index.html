@@ -16,15 +16,15 @@
 <body class="page__body">
   <header class="page__header">
     <div class="page-header page-header--nojs">
-      <img class="page-header__image" src="img/main-background-desktop@1x.png" alt="фото велосипеда" width="1440"
-        height="825">
-        <button class="page-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <picture>
+        <source type="image/webp" srcset="img/main-background-desktop@1x.webp 1x, img/main-background-desktop@2x.webp 2x">
+        <img class="page-header__image" src="img/main-background-desktop@1x.png" srcset="img/main-background-desktop@2x.png 2x" alt="фото велосипеда" width="1440" height="825">
+      </picture>
+
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <nav class="page-header__nav main-nav">
-        <!-- <a class="page-header__link" href="#">
-          <img src="img/moon-logo.svg" alt="logo" width="68" height="21">
-        </a> -->
         <ul class="main-nav__list">
           <li>
             <a href="#facts">О нас</a>
@@ -40,47 +40,46 @@
           </li>
         </ul>
       </nav>
-      <section class="promo">
-        <h1 class="visually-hidden">Магазин велосипедов</h1>
+      <div class="page-header__wrapper wrapper">
 
-        <div class="promo__wrapper wrapper">
+        <section class="promo">
+          <h1 class="visually-hidden">Магазин велосипедов</h1>
+          <a class="promo__link">
+            <img src="img/moon-logo.svg" alt="logo" width="68" height="21">
+            <span class="visually-hidden">Открыть меню</span>
+          </a>
           <div class="promo__title">
-            <a class="promo__link">
-              <img src="img/moon-logo.svg" alt="logo" width="68" height="21">
-              <span class="visually-hidden">Открыть меню</span>
-            </a>
             <div class="promo__title--text">
               <h2>Мы продаем велосипеды</h2>
               <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
             </div>
-
-          </div>
-          <div class="promo__form">
-            <form class="form" action="https://echo.htmlacademy.ru" method="get" autocomplete="off">
-              <fieldset>
-                <legend>Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
-                <p>
-                  <label class="form__label form__label--name visually-hidden" for="name">Введите ваше имя</label>
-                  <input class="form__input form__input--name" type="text" id="name" placeholder="Введите Ваше Имя">
-                </p>
-                <p>
-                  <label class="form__label form__label--telephone visually-hidden vis" for="phone">Введите ваше
-                    имя</label>
-                  <input class="form__input form__input--telephone" type="tel" id="phone"
-                    placeholder="Введите Ваш номер телефона">
-                </p>
-                <button class="button form__button" type="submit">Подобрать велосипед мечты</button>
-              </fieldset>
-            </form>
           </div>
 
-        </div>
-      </section>
+        </section>
+        <section class="promo__form">
+          <form class="form" action="https://echo.htmlacademy.ru" method="get" autocomplete="off">
+            <fieldset>
+              <legend>Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
+              <p>
+                <label class="form__label form__label--name visually-hidden" for="name">Введите ваше имя</label>
+                <input class="form__input form__input--name" type="text" id="name" placeholder="Введите Ваше Имя">
+              </p>
+              <p>
+                <label class="form__label form__label--telephone visually-hidden vis" for="phone">Введите ваше
+                  имя</label>
+                <input class="form__input form__input--telephone" type="tel" id="phone"
+                  placeholder="Введите Ваш номер телефона">
+              </p>
+              <button class="button form__button" type="submit">Подобрать велосипед мечты</button>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+
     </div>
   </header>
 
   <main class="page__main">
-
     <section id="facts" class="facts">
       <div class="facts__wrapper wrapper">
         <h2 class="facts__title">Несколько фактов о нас</h2>
@@ -105,15 +104,24 @@
         <h2 class="bicycles__title">Виды велосипедов</h2>
         <div class="bicycles__types">
           <div class="bicycles__item bicycles__item--city">
-            <img src="img/city-bike-desktop@1x.png" alt="картинка дорожного велосипеда" height="503" width="342">
+            <picture>
+              <source type="image/webp" srcset="img/city-bike-desktop@1x.webp 1x, img/city-bike-desktop@2x.webp 2x">
+              <img src="img/city-bike-desktop@1x.png" srcset="img/city-bike-desktop@2x.png 2x" alt="картинка дорожного велосипеда" height="503" width="342">
+            </picture>
             <h3>Дорожный велосипед</h3>
           </div>
           <div class="bicycles__item bicycles__item--mountain">
-            <img src="img/mountain-bike-desktop@1x.png" alt="картинка горного велосипеда" height="503" width="342">
+            <picture>
+              <source type="image/webp" srcset="img/mountain-bike-desktop@1x.webp 1x, img/mountain-bike-desktop@2x.webp 2x">
+              <img src="img/mountain-bike-desktop@1x.png" srcset="img/mountain-bike-desktop@2x.png 2x" alt="картинка горного велосипеда"  height="503" width="342">
+            </picture>
             <h3>Горный велосипед</h3>
           </div>
           <div class="bicycles__item bicycles__item--kids">
-            <img src="img/kids-bike-desktop@1x.png" alt="картинка детского велосипеда" height="503" width="342">
+            <picture>
+            <source type="image/webp" srcset="img/kids-bike-desktop@1x.webp 1x, img/kids-bike-desktop@2x.webp 2x">
+            <img src="img/kids-bike-desktop@1x.png" srcset="img/kids-bike-desktop@2x.png 2x" alt="картинка детского велосипеда" height="503" width="342">
+          </picture>
             <h3>Детский велосипед</h3>
           </div>
         </div>
@@ -127,7 +135,10 @@
           <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
         </div>
         <div class="video__block">
-          <img src="img/video-background-desktop.png" alt="картинка видео">
+          <picture>
+            <source type="image/webp" srcset="img/video-background-desktop.webp 1x">
+            <img src="img/video-background-desktop.png"  alt="картинка видео">
+          </picture>
           <button class="button video__button">Воспроизвести видео</button>
         </div>
       </div>
@@ -140,7 +151,10 @@
         <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       </div>
       <div class="map">
-        <img src="img/map.png" width="957" height="530" alt="">
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11304.489500396387!2d30.31194523902824!3d59.94259057197034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1618910323670!5m2!1sru!2sru"
+        height="530" loading="lazy" style="border:0;"  aria-hidden="false" tabindex="0" title="интерактивная карта. Как добраться до шоу-рума">
+      </iframe>
       </div>
       <div class="social">
         <ul class="social__list">

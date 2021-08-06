@@ -16,6 +16,10 @@
   & p {
     margin: 0;
     margin-bottom: 20px;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 17px;
+    }
   }
 }
 
@@ -36,6 +40,11 @@
     font-size: 18px;
     line-height: 28px;
     color: $basic-black;
+    margin-bottom: 28px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 18px;
   }
 }
 

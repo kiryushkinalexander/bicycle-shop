@@ -4,13 +4,20 @@
 
   @media (max-width: $tablet-width) {
     background-image: url("/img/map-tablet.png");
+    height: 530px;
     width: 698px;
-    height: 545px;
   }
 
   @media (max-width: $mobile-width) {
     background-image: url("/img/map-mobile.png");
     width: 320px;
-    height: 250px;
+  }
+
+  iframe {
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+      height: 545px;
+    }
   }
 }

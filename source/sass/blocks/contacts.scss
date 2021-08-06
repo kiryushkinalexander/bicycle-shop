@@ -2,6 +2,11 @@
   max-width: 555px;
   margin: 0 auto;
 
+
+  @media (max-width: $tablet-width) {
+  max-width: 630px;
+  }
+
   & h2 {
     font-family: $font-default;
     font-style: normal;
