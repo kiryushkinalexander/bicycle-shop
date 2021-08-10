@@ -9,3 +9,20 @@
   margin: 0;
   position: relative;
 }
+
+.page__header {
+  background-color: $basic-black;
+  background-image: url("../img/main-background-desktop@1x.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/main-background-tablet@1x.png");
+    background-position-y: -50px;
+    background-size: contain;
+    background-color: transparent;
+  }
+}

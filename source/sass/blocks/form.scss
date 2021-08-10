@@ -13,7 +13,7 @@
   margin: 0;
   border: none;
 
-  & p {
+  p {
     margin: 0;
     margin-bottom: 20px;
 
@@ -24,7 +24,6 @@
 }
 
 .form legend {
-  font-family: $font-default;
   font-style: normal;
   font-weight: 600;
   font-size: 17px;
@@ -35,10 +34,7 @@
   margin-bottom: 20px;
 
   @media (max-width: $tablet-width) {
-    font-style: normal;
-    font-weight: 600;
     font-size: 18px;
-    line-height: 28px;
     color: $basic-black;
     margin-bottom: 28px;
   }
@@ -49,7 +45,6 @@
 }
 
 .form__input {
-  font-family: $font-default;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -72,10 +67,6 @@
   @media (max-width: $tablet-width) {
     border: 1px solid $input-border;
     padding: 12px 57px 12px 21px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 24px;
 
     &::placeholder {
       font-style: normal;
@@ -87,7 +78,6 @@
 }
 
 .form__button {
-  font-family: $font-default;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
@@ -96,7 +86,7 @@
   border: none;
   background-color: $decoration-color;
   border-radius: 6px;
-  padding: 15px 48px;
+  padding: 15px 45px;
 
   @media (max-width: $mobile-width) {
     padding: 15px 31px;

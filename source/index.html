@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html class="page" lang="en">
+<html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,67 +15,56 @@
 
 <body class="page__body">
   <header class="page__header">
-    <div class="page-header page-header--nojs">
-      <picture>
-        <source type="image/webp"
-          srcset="img/main-background-desktop@1x.webp 1x, img/main-background-desktop@2x.webp 2x">
-        <img class="page-header__image" src="img/main-background-desktop@1x.png"
-          srcset="img/main-background-desktop@2x.png 2x" alt="фото велосипеда" width="1440" height="825">
-      </picture>
+    <div class="page-header page-header--nojs wrapper">
       <button class="page-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="page-header__nav main-nav">
-        <ul class="main-nav__list">
-          <li>
-            <a href="#facts">О нас</a>
-          </li>
-          <li>
-            <a href="#types">Виды велосипедов</a>
-          </li>
-          <li>
-            <a href="#video">Видео про велосипеды</a>
-          </li>
-          <li>
-            <a href="#contacts">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="page-header__wrapper wrapper">
-        <section class="promo">
+        <nav class="page-header__nav page-header__nav--nojs main-nav">
+          <ul class="main-nav__list">
+            <li>
+              <a href="#facts">О нас</a>
+            </li>
+            <li>
+              <a href="#types">Виды велосипедов</a>
+            </li>
+            <li>
+              <a href="#video">Видео про велосипеды</a>
+            </li>
+            <li>
+              <a href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      <div class="promo">
           <h1 class="visually-hidden">Магазин велосипедов</h1>
           <a class="promo__link">
             <img src="img/moon-logo.svg" alt="logo" width="68" height="21">
             <span class="visually-hidden">Открыть меню</span>
           </a>
-          <div class="promo__title">
-            <div class="promo__title--text">
-              <h2>Мы продаем велосипеды</h2>
-              <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="promo__form">
-          <form class="form" action="https://echo.htmlacademy.ru" method="get" autocomplete="off">
-            <fieldset>
-              <legend>Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
-              <p>
-                <label class="form__label form__label--name visually-hidden" for="name">Введите ваше имя</label>
-                <input class="form__input form__input--name" type="text" id="name" placeholder="Введите Ваше Имя"
-                  pattern="[A-zA-ZА-яА-Я]+$" value="" title="Имя не должно содержать цифр и пробелов" required>
-              </p>
-              <p>
-                <label class="form__label form__label--telephone visually-hidden vis" for="phone">Введите ваше
-                  имя</label>
-                <input class="form__input form__input--telephone" type="tel" id="phone"
-                  placeholder="Введите Ваш номер телефона" value="" pattern="^(\+)?[0-9]+$" minlength="8" maxlength="18"
-                  title="телефон в формате: +79991234567" required>
-              </p>
-              <button class="button form__button" type="submit">Подобрать велосипед мечты</button>
-            </fieldset>
-          </form>
-        </section>
+          <!-- <div class="promo__intro"> -->
+            <h2>Мы продаем велосипеды</h2>
+            <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+          <!-- </div> -->
+      </div>
+      <div class="form">
+        <form action="https://echo.htmlacademy.ru" method="POST" autocomplete="off">
+          <fieldset>
+            <legend>Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
+            <p>
+              <label class="form__label visually-hidden" for="name">Введите ваше имя</label>
+              <input class="form__input" type="text" id="name" placeholder="Введите Ваше Имя" pattern="[A-zA-ZА-яА-Я]+$"
+                value="" title="Имя не должно содержать цифр и пробелов" required>
+            </p>
+            <p>
+              <label class="form__label form__label--telephone visually-hidden" for="phone">Введите ваше
+                имя</label>
+              <input class="form__input form__input--telephone" type="tel" id="phone"
+                placeholder="Введите Ваш номер телефона" value="" pattern="^(\+)?[0-9]+$" minlength="8" maxlength="18"
+                title="телефон в формате: +79991234567" required>
+            </p>
+            <button class="button form__button" type="submit">Подобрать велосипед мечты</button>
+          </fieldset>
+        </form>
       </div>
     </div>
   </header>
@@ -159,7 +149,7 @@
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11304.489500396387!2d30.31194523902824!3d59.94259057197034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1618910323670!5m2!1sru!2sru"
           height="530" loading="lazy" style="border:0;" aria-hidden="false" tabindex="0"
-          title="интерактивная карта. Как добраться до шоу-рума">
+          title="Как до нас добраться">
         </iframe>
       </div>
       <div class="social">
@@ -187,4 +177,5 @@
   </footer>
   <script src="js/script.min.js"></script>
 </body>
+
 </html>
