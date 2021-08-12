@@ -17,6 +17,7 @@
   justify-content: center;
   padding: 21px 0 8px 0;
   border-bottom: 1px solid $borded-color;
+  width: 100%;
 
   li {
     padding: 0 67px;
@@ -31,6 +32,8 @@
   }
 
   a {
+    display: block;
+    width: 100%;
     font-weight: 300;
     font-size: 16px;
     line-height: 32px;
@@ -50,14 +53,25 @@
 
     li {
       background-color: $menu-background;
-      padding: 17px 77px 17px 16px;
+      padding: 21px 25px 21px 16px;
     }
 
     a {
+      text-align: center;
       font-weight: normal;
       font-size: 20px;
       line-height: 140%;
       color: $menu-color;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    li {
+      padding: 21px 77px 21px 16px;
+    }
+
+    a {
+      text-align: left;
     }
   }
 }

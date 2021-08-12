@@ -1,6 +1,6 @@
 .video {
   padding-top: 122px;
-  padding-bottom: 152px;
+  padding-bottom: 150px;
   background-image: linear-gradient(to bottom, $video-background 706px, $basic-white 248px);
 
   @media (max-width: $tablet-width) {
@@ -9,7 +9,7 @@
     background-image: linear-gradient(to bottom, $video-background 413px, $basic-white 155px);
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     padding-top: 81px;
     padding-bottom: 70px;
     background-image: linear-gradient(to bottom, $video-background 385px, $basic-white 155px);
@@ -56,6 +56,8 @@
 
     @media (max-width: $mobile-width) {
       margin-bottom: 54px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
 }
@@ -91,7 +93,7 @@
   cursor: pointer;
   background-position: left 28px center;
   background-size: 13px 18px;
-  top: 44%;
+  top: 43%;
   left: 47%;
 
   @media (max-width: $tablet-width) {

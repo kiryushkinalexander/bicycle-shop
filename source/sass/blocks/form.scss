@@ -1,10 +1,16 @@
 .form {
   margin: 0;
+  margin-top: 4px;
   max-width: 327px;
 
   @media (max-width: $tablet-width) {
     max-width: 324px;
     margin: 0 auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -36,11 +42,11 @@
   @media (max-width: $tablet-width) {
     font-size: 18px;
     color: $basic-black;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
   }
 
-  @media (max-width: $tablet-width) {
-    margin-bottom: 18px;
+  @media (max-width: $mobile-width) {
+    margin-bottom: 19px;
   }
 }
 
@@ -75,6 +81,10 @@
       line-height: 24px;
     }
   }
+
+  @media (max-width: $mobile-width) {
+    padding: 13px 19px 11px 26px;
+  }
 }
 
 .form__button {
@@ -88,7 +98,11 @@
   border-radius: 6px;
   padding: 15px 45px;
 
+  @media (max-width: $tablet-width) {
+    padding: 16px 49px 14px 50px;
+  }
+
   @media (max-width: $mobile-width) {
-    padding: 15px 31px;
+    padding: 16px 28px;
   }
 }

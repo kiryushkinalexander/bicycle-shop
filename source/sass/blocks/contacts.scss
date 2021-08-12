@@ -6,6 +6,11 @@
     max-width: 630px;
   }
 
+  @media (max-width: $mobile-width) {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+
   h2 {
     font-style: normal;
     font-weight: 600;
@@ -14,7 +19,7 @@
     color: $contacts-color;
     text-align: center;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
 
     @media (max-width: $tablet-width) {
       font-size: 24px;
@@ -41,9 +46,5 @@
       padding: 0;
       margin-bottom: 20px;
     }
-  }
-
-  @media (max-width: $mobile-width) {
-    max-width: 258px;
   }
 }

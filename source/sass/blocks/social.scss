@@ -1,12 +1,13 @@
 .social {
-  padding-top: 26px;
+  padding-top: 15px;
   padding-bottom: 98px;
   position: relative;
+  max-width: 558px;
   margin: 0 auto;
 
   @media (max-width: $tablet-width) {
     padding-bottom: 55px;
-    padding-top: 14px;
+    padding-top: 32px;
     max-width: 698px;
   }
 
@@ -22,7 +23,7 @@
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr;
-  gap: 28px;
+  gap: 90px;
 
   @media (max-width: $mobile-width) {
     display: flex;
@@ -32,6 +33,8 @@
 }
 
 .social__mail {
+  display: inline-flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   text-align: right;
@@ -43,9 +46,19 @@
     line-height: 22px;
     padding-left: 13px;
   }
+
+  @media (max-width: $tablet-width) {
+    margin-left: 71px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+  }
 }
 
 .social__phone {
+  display: inline-flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   text-align: left;
@@ -56,9 +69,5 @@
     font-size: 16px;
     line-height: 32px;
     padding-left: 17px;
-  }
-
-  img {
-    margin-left: 62px;
   }
 }

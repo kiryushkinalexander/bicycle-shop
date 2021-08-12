@@ -1,15 +1,17 @@
 .bicycles {
-  padding-top: 153px;
-  padding-bottom: 201px;
+  padding-top: 155px;
+  padding-bottom: 148px;
   background-color: $bicycles-background;
 
   @media (max-width: $tablet-width) {
     padding-top: 50px;
-    padding-bottom: 125px;
+    padding-bottom: 70px;
   }
 
   @media (max-width: $mobile-width) {
-    padding-bottom: 111px;
+    padding-bottom: 55px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
@@ -19,16 +21,14 @@
   justify-content: center;
   align-items: flex-start;
   gap: 50px;
-  max-width: 1126px;
   margin: 0 auto;
 
   @media (max-width: $tablet-width) {
-    max-width: 600px;
-    gap: 104px 50px;
+    gap: 50px 50px;
   }
 
   @media (max-width: $mobile-width) {
-    gap: 96px;
+    gap: 43px;
   }
 }
 
@@ -50,6 +50,7 @@
 
 .bicycles__item {
   position: relative;
+  background-color: $bicycles-background;
 
   h3 {
     margin: 0;
@@ -71,11 +72,13 @@
     content: "";
   }
 
+  @media (max-width: $tablet-width) {
+    width: 270px;
+  }
+
   &--city {
     margin-top: 10px;
     z-index: 1;
-    height: 503px;
-    width: 342px;
 
     &::before {
       width: 180px;
@@ -83,7 +86,7 @@
       border-radius: 50%;
       border: 27px solid $decoration-color;
       left: -63px;
-      top: 31%;
+      top: 28%;
       z-index: -1;
     }
 
@@ -92,14 +95,10 @@
     }
 
     @media (max-width: $tablet-width) {
-      height: 300px;
-      width: 270px;
       margin-top: 0;
 
       img {
-        background-image: url("../img/city-bike-tablet@1x.png");
         height: 300px;
-        width: 270px;
         object-fit: cover;
         border-radius: 6px;
       }
@@ -109,7 +108,7 @@
         height: 127px;
         border: 18px solid $decoration-color;
         left: -37px;
-        top: 67%;
+        top: 57%;
       }
     }
 
@@ -122,8 +121,7 @@
 
   &--mountain {
     margin-top: 39px;
-    height: 566px;
-    width: 342px;
+
 
     &::after {
       width: 47px;
@@ -137,8 +135,8 @@
       width: 47px;
       height: 47px;
       border: 8px solid $decoration-color;
-      bottom: -22px;
-      right: -20px;
+      bottom: 31px;
+      right: -22px;
     }
 
     h3 {
@@ -146,14 +144,10 @@
     }
 
     @media (max-width: $tablet-width) {
-      height: 300px;
-      width: 270px;
       margin-top: 0;
 
       img {
-        background-image: url("../img/mountain-bike-tablet@1x.png");
         height: 300px;
-        width: 270px;
         object-fit: cover;
         border-radius: 6px;
       }
@@ -169,15 +163,12 @@
   }
 
   &--kids {
-    height: 512px;
-    width: 342px;
-
     &::before {
       width: 95px;
       height: 95px;
       border: 17px solid $decoration-color;
       border-radius: 50%;
-      top: -31px;
+      top: -32px;
       right: -36px;
     }
 
@@ -186,14 +177,10 @@
     }
 
     @media (max-width: $tablet-width) {
-      height: 300px;
-      width: 270px;
       margin-top: 0;
 
       img {
-        background-image: url("../img/kids-bike-tablet@1x.png");
         height: 300px;
-        width: 270px;
         object-fit: cover;
         border-radius: 6px;
       }
@@ -202,7 +189,7 @@
         width: 68px;
         height: 68px;
         border: 13px solid $decoration-color;
-        top: -7%;
+        top: -6%;
         right: -25px;
       }
     }
