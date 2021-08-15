@@ -23,15 +23,19 @@
     }
 
     .page-header__nav {
-      display: flex;
-      position: fixed;
-      justify-content: flex-end;
-      width: 100%;
-      height: 100vh;
-      background-color: $basic-white;
-      z-index: 2;
-      top: 0;
-      right: 0;
+
+      @media (max-width: $tablet-width) {
+        display: block;
+        height: 392px;
+        width: 100%;
+        grid-column: unset;
+        padding: 0;
+      }
+
+      @media (max-width: $mobile-width) {
+        display: flex;
+        height: 400px;
+      }
     }
   }
 
