@@ -97,6 +97,11 @@
   background-color: $decoration-color;
   border-radius: 6px;
   padding: 15px 45px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
 
   @media (max-width: $tablet-width) {
     padding: 16px 49px 14px 50px;

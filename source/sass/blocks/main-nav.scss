@@ -41,6 +41,10 @@
     line-height: 32px;
     color: $basic-white;
     opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   @media (max-width: $tablet-width) {

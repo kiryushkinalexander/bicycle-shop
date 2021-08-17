@@ -10,9 +10,9 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding-top: 81px;
+    padding-top: 83px;
     padding-bottom: 70px;
-    background-image: linear-gradient(to bottom, $video-background 385px, $basic-white 155px);
+    background-image: linear-gradient(to bottom, $video-background 383px, $basic-white 155px);
   }
 }
 
@@ -93,8 +93,12 @@
   cursor: pointer;
   background-position: left 28px center;
   background-size: 13px 18px;
-  top: 43%;
-  left: 47%;
+  top: 226px;
+  left: 431px;
+
+  &:hover {
+    opacity: 0.5;
+  }
 
   @media (max-width: $tablet-width) {
     width: 90px;
@@ -110,7 +114,7 @@
     height: 65px;
     background-size: 13px 18px;
     background-position: left 27px center;
-    top: 50px;
+    top: 47px;
     left: 39%;
   }
 }
